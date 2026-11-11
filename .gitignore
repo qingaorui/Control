@@ -1,0 +1,13 @@
+node_modules/
+release/
+data/
+.runtime/
+preview/
+user-data/
+.dsh*/
+.test*/
+*.log
+*.tmp
+*.zip
+.env
+.env.*

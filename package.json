@@ -1,0 +1,23 @@
+{
+  "name": "deepseek-harness-console",
+  "version": "1.0.0",
+  "private": true,
+  "productName": "DeepSeek Harness 控制台",
+  "description": "DeepSeek Harness 控制台：需求文档、项目制作、长期记忆、技能工具与软件管理",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js --open",
+    "build:desktop": "node scripts/build-desktop.js",
+    "test": "node scripts/smoke-test.js",
+    "test:ui": "node scripts/ui-audit.js",
+    "test:modes": "node scripts/window-mode-audit.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "jsdom": "^31.0.0",
+    "rcedit": "^5.0.2"
+  }
+}
