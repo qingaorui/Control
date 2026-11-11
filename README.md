@@ -2,9 +2,15 @@
 
 一个本地运行的 DeepSeek 工作台：把模糊想法聊成可验收的需求文档，交给执行工程师落成文件，并把每次协作沉淀为长期记忆、技能和工具，最终形成专属于你的智能体。
 
+## 仓库与下载
+
+- GitHub：https://github.com/qingaorui/Control
+- Release：https://github.com/qingaorui/Control/releases/tag/v1.0.0
+- 安装包：https://github.com/qingaorui/Control/releases/download/v1.0.0/Control-v1.0.0.zip
+
 提供两种运行方式：
 
-- **桌面版（推荐）**：`DeepSeek Harness Console.exe`，白色主界面，项目/记忆/技能等在应用窗口内；对话默认调用本地 DSH Web 浏览器 UI，安装一次长期使用。
+- **桌面版（推荐）**：`DeepSeek Harness Console.exe`，白色主界面，对话使用控制台自己的页面，安装一次长期使用。
 - **源码版**：Node.js 本地服务 + 浏览器访问 `http://127.0.0.1:4180`。
 
 ## 对话后端
@@ -112,7 +118,7 @@ release\DeepSeekHarnessConsole\DeepSeek Harness Console.exe
 4. 在「设置 → 对话后端」确认：默认「自动」会优先使用本机已安装且已登录的 DSH；也可以显式选择本机 DSH 或 DeepSeek API。使用本机 DSH 时不需要填 API Key。
 5. 确认工作区根目录，默认 `D:\dscontrol`。项目与任务会分别放入 `xaingmu`、`renwu` 子目录；如果已有 `xiangmu`，会优先复用已有目录。
 
-应用主界面在自己的窗口中打开；点击需求文档、项目制作、任务对话或软件管理对话时，使用**控制台自己的对话页**在本地浏览器标签中打开，工作区和对话记录仍按当前项目及子项目范围显示。桌面版优先使用固定端口 `43180`（被占用时自动顺延）。
+应用主界面在自己的窗口中打开；点击需求文档、项目制作、任务对话或软件管理对话时，使用**控制台自己的对话页**在本地浏览器标签中打开，侧边栏保持完整项目树，不会因点击项目而隐藏其他项目。桌面版优先使用固定端口 `43180`（被占用时自动顺延）。
 
 主界面使用系统 **Microsoft Edge WebView2 Runtime**（Windows 10/11 默认自带）。如果提示缺少 WebView2，安装微软的 Evergreen Runtime 即可。
 
