@@ -344,6 +344,19 @@ function openNativeUrl(target, mode) {
   }
 }
 
+async function openSoftwareDsh() {
+  toast('正在启动原生 DSH 软件改进页面…', '');
+  try {
+    const data = await apiPost('/api/dsh/web', { software: true });
+    if (!data?.url) throw new Error('DSH 没有返回浏览器地址');
+    openNativeUrl(data.url, 'dsh');
+    toast('已打开原生 DSH 软件改进页面', 'ok');
+  } catch (err) {
+    toast(`原生 DSH 启动失败：${err.message}`, 'bad');
+    location.hash = '#/management';
+  }
+}
+
 /* --------------------------------------------------------------------------
    api
    -------------------------------------------------------------------------- */
@@ -4046,6 +4059,10 @@ function attachEvents() {
         break;
       case 'open-folder':
         openFolder();
+        break;
+      case 'open-software':
+        event.preventDefault();
+        openSoftwareDsh();
         break;
       case 'open-workspace':
         try {

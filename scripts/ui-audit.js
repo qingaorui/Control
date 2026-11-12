@@ -132,8 +132,9 @@ async function main() {
     [
       document.querySelectorAll('.side-utils .util-link').length === 4 &&
         document.querySelector('.side-utils').textContent.includes('项目总管理'),
-      '项目总管理、记忆、技能工具、软件管理入口齐全',
+      '项目总管理、记忆、技能工具、软件改进入口齐全',
     ],
+    [Boolean(document.querySelector('[data-action="open-software"]')), '软件改进打开原生 DSH 页面'],
     [view.textContent.includes('把想法，变成可验收的交付'), '项目工作区空状态/首页正常'],
     [Boolean(document.querySelector('#api-status')), '底部 API 状态可点击'],
   ]);

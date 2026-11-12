@@ -677,11 +677,22 @@ async function apiDshWeb(req, res) {
   const body = await readJson(req);
   const projectId = body.projectId ? String(body.projectId) : null;
   const taskId = body.taskId ? String(body.taskId) : null;
+  const software = Boolean(body.software);
   let cwd = APP_ROOT;
   let key = 'app';
   let rootId = null;
   let rootName = '';
   try {
+    if (software) {
+      cwd = process.env.DSH_SOFTWARE_ROOT
+        ? path.resolve(process.env.DSH_SOFTWARE_ROOT)
+        : APP_ROOT;
+      key = 'software';
+      rootId = 'software';
+      rootName = 'Control 软件改进';
+      const result = await dshWeb.ensure({ cwd, key, rootId, rootName });
+      return json(res, 200, { ok: true, ...result });
+    }
     if (taskId) {
       const task = store.taskById(taskId);
       if (!task) return fail(res, 404, '任务不存在');
