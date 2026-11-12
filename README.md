@@ -5,8 +5,8 @@
 ## 仓库与下载
 
 - GitHub：https://github.com/qingaorui/Control
-- Release：https://github.com/qingaorui/Control/releases/tag/v1.0.1
-- 安装包：https://github.com/qingaorui/Control/releases/download/v1.0.1/Control-v1.0.1.zip
+- Release：https://github.com/qingaorui/Control/releases/tag/v1.0.2
+- 安装包：https://github.com/qingaorui/Control/releases/download/v1.0.2/Control-v1.0.2.zip
 
 提供两种运行方式：
 
