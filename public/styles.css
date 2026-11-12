@@ -7370,3 +7370,276 @@ body.dialog-mode .system-panel {
     transform: rotate(360deg);
   }
 }
+
+/* chat readability on the white theme */
+
+.msg.assistant .msg-body,
+.msg.assistant .msg-body .md {
+  color: #2f2f2f;
+}
+
+.msg.user .msg-body,
+.msg.user .msg-body .md {
+  color: #ffffff;
+}
+
+.msg-head {
+  color: #5f5f5f;
+}
+
+.msg-name {
+  color: #303030;
+}
+
+.msg-badge {
+  border-color: #deded8;
+  background: #f3f3ee;
+  color: #666666;
+}
+
+.msg.error .msg-body {
+  border-color: #efcaca;
+  background: #fff6f6;
+  color: #991b1b;
+}
+
+.doc-ready {
+  border-color: #c8e6d0;
+  background: #f3fbf5;
+}
+
+.doc-ready strong {
+  color: #166534;
+}
+
+.doc-ready small {
+  color: #4d7c5d;
+}
+
+.doc-attachment {
+  border-color: #deded8;
+  background: #ffffff;
+}
+
+.doc-attachment:hover {
+  border-color: #c8c8c0;
+  background: #fafaf7;
+}
+
+.doc-attachment .glyph {
+  background: #f1f1ec;
+  color: #444444;
+}
+
+.doc-attachment strong {
+  color: #262626;
+}
+
+.doc-attachment small {
+  color: #6b6b6b;
+}
+
+.file-card {
+  border-color: #e0e0da;
+  background: #ffffff;
+  color: #333333;
+}
+
+.file-card:hover {
+  border-color: #c8c8c0;
+  background: #fafaf7;
+  color: #111111;
+}
+
+.file-card .size {
+  color: #777777;
+}
+
+.tool-call {
+  border-color: #e0e0da;
+  background: #ffffff;
+}
+
+.tool-call-head {
+  border-bottom-color: #e6e6e0;
+  color: #333333;
+}
+
+.tool-call-head .badge {
+  color: #666666;
+}
+
+.tool-call pre {
+  color: #333333;
+}
+
+.tool-call-foot {
+  border-top-color: #e6e6e0;
+}
+
+.quick-chip {
+  border-color: #deded8;
+  background: #ffffff;
+  color: #555555;
+}
+
+.quick-chip:hover {
+  border-color: #bfbfb8;
+  background: #f7f7f3;
+  color: #1b1b1b;
+}
+
+.composer-note,
+.composer-hint {
+  color: #666666;
+}
+
+.context-title {
+  color: #1b1b1b;
+  font-weight: 600;
+}
+
+.context-title svg {
+  color: #555555;
+}
+
+.context-head {
+  border-bottom-color: #e6e6e0;
+}
+
+.doc-empty .glyph,
+.tree-empty .glyph {
+  border-color: #d8d8d2;
+  color: #555555;
+}
+
+.doc-empty p {
+  color: #333333;
+}
+
+.doc-empty span,
+.tree-empty {
+  color: #666666;
+}
+
+.doc-body .md {
+  color: #333333;
+}
+
+.doc-live {
+  border-color: #deded8;
+  background: #f3f3ee;
+  color: #555555;
+}
+
+.doc-actions {
+  border-top-color: #e6e6e0;
+}
+
+.doc-meta {
+  color: #6b6b6b;
+}
+
+.tree-row {
+  color: #3f3f3f;
+}
+
+.tree-row.file:hover {
+  background: #f1f1ec;
+  color: #111111;
+}
+
+.tree-row.folder {
+  color: #666666;
+}
+
+.tree-row .tree-size {
+  color: #888888;
+}
+
+.context-path {
+  color: #5f5f5f;
+}
+
+.context-path:hover {
+  background: #f1f1ec;
+  color: #1b1b1b;
+}
+
+.brief-card {
+  border-color: #e0e0da;
+  background: #f8f8f5;
+}
+
+.brief-card .brief-icon {
+  border-color: #deded8;
+  background: #ffffff;
+  color: #444444;
+}
+
+.brief-card h4 {
+  color: #1b1b1b;
+}
+
+.brief-card p {
+  color: #555555;
+}
+
+.brief-tips span {
+  border-color: #deded8;
+  background: #ffffff;
+  color: #555555;
+}
+
+.ready-card {
+  border-color: #e0e0da;
+  background: #ffffff;
+}
+
+.ready-icon {
+  border-color: #deded8;
+  background: #f3f3ee;
+  color: #444444;
+}
+
+.ready-card h2 {
+  color: #1b1b1b;
+}
+
+.ready-card > p {
+  color: #555555;
+}
+
+.ready-doc {
+  border-color: #e4e4de;
+  background: #f8f8f5;
+}
+
+.ready-doc svg {
+  color: #555555;
+}
+
+.ready-doc strong {
+  color: #333333;
+}
+
+.ready-doc small {
+  color: #666666;
+}
+
+.ready-hint {
+  color: #666666;
+}
+
+.blocked-card {
+  border-color: #e0e0da;
+  background: #ffffff;
+}
+
+.blocked-card h2 {
+  color: #1b1b1b;
+}
+
+.blocked-card p {
+  color: #555555;
+}
